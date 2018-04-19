@@ -15,7 +15,7 @@ function monsterList(){
 })
     .then(function(response){
         for (let i=0; i<response.length; i++){
-            $('monsterArray').append(`<li> ${response[i].monster} </li>`);
+            $('#bigMonsters').append(`<li> ${response[i].monsterArray} </li>`);
         }
         });
 }

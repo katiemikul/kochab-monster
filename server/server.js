@@ -6,7 +6,7 @@ const PORT = 5000;
 app.use(express.static('server/server'));
 app.use(express.static('server/public'));
 
-app.get('/', (req, res) => {
+app.get('/monsterArray', (req, res) => {
     res.send(monsterArray);
 });
 
